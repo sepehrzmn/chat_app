@@ -1,0 +1,65 @@
+.l-multiplied-top {
+	width: 25px;
+	height: 2px;
+	display: block;
+	background: white;
+	transform: rotate(-40deg);
+	position: absolute;
+	transition: all 0.5s;
+}
+.l-multiplied-bottom {
+	width: 25px;
+	height: 2px;
+	display: block;
+	background: white;
+	transition: all 0.5s;
+	position: absolute;
+}
+.l-multiplied-between {
+	width: 25px;
+	height: 2px;
+	display: block;
+	background: white;
+	transition: all 0.5s;
+	position: absolute;
+}
+.icon-menu {
+	cursor: pointer;
+	z-index: 9;
+	height: 50px;
+	width: 50px;
+	top: 3px;
+	left: 3px;
+	background: #5f54cd;
+	display: none;
+	padding-left: 12px;
+	z-index: 10 !important;
+}
+.icon-menu:hover {
+	background: #4237b2;
+	transition: all 0.5s;
+}
+@media screen and (max-width: 888px) {
+	.icon-menu {
+		display: block;
+	}
+}
+.dark {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 8;
+	animation-name: anime-dark;
+	animation-duration: 0.5s;
+}
+@keyframes anime-dark {
+	from {
+		background: rgba(0, 0, 0, 0);
+	}
+	to {
+		background: rgba(0, 0, 0, 0.5);
+	}
+}

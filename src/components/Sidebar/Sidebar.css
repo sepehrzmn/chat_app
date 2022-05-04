@@ -1,0 +1,42 @@
+.sidebar {
+	background: #5e4ff3;
+	border-radius: 20px;
+	margin-right: 10px;
+	border: none !important;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.s-navItem .active {
+	background-color: #362c9c !important;
+
+	color: white !important;
+	border: none !important;
+}
+.s-navItem .nav-link {
+	border: none !important;
+	padding: 10px 20px;
+	margin-top: 10px;
+	border-top-left-radius: 10px !important;
+	border-top-right-radius: 10px !important;
+	color: white;
+}
+.s-navItem .nav-link:hover.nav-link {
+	border: none !important;
+	color: white;
+	cursor: pointer;
+}
+.s-context {
+	background-color: #362c9c;
+	border-top-left-radius: 10px !important;
+	border-top-right-radius: 10px !important;
+}
+.sidebar .nav-tabs {
+	border: none !important;
+}
+@media screen and (max-width: 888px) {
+	.sidebar {
+		height: 95%;
+		transition: transform 0.5s;
+		z-index: 9;
+		position: absolute;
+	}
+}
